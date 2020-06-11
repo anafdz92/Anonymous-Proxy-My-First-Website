@@ -1,0 +1,30 @@
+.looking {
+  display: block;
+  width: 100%;
+
+  &__small {
+    color: $color-lineText;
+  }
+
+  &__title {
+    color: $color-mainText;
+    font-style: $font-primary;
+  }
+
+  &__text {
+  }
+
+  &__link {
+    color: $color-buttons;
+    border: solid $color-buttons 1px;
+    border-radius: 50px;
+    display: inline;
+
+    a {
+      padding-left: 25px;
+      padding-right: 24px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+}
