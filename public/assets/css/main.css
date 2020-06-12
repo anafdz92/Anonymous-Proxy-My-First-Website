@@ -317,13 +317,15 @@ template {
   width: 100%;
   background-image: url("../images/cover.jpg");
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  justify-content: flex-end; }
   .header__nav {
     display: inline-block;
     background-color: #0271bc;
     height: 44px;
     width: 44px;
-    position: fixed; }
+    position: fixed;
+    top: 0px; }
     .header__nav--image {
       padding: 15px; }
   .header__box {
@@ -332,7 +334,7 @@ template {
     flex-direction: column;
     align-items: center;
     color: #ffffff;
-    height: 50%vh; }
+    height: 50%; }
     .header__box--title {
       font-family: "Roboto", sans-serif;
       text-transform: uppercase;
@@ -356,17 +358,28 @@ template {
 
 .looking {
   display: block;
-  width: 100%; }
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 45px; }
   .looking__small {
-    color: #8ccbea; }
+    color: #8ccbea;
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px; }
   .looking__title {
     color: #000000;
-    font-style: "Roboto", sans-serif; }
+    font-style: "Roboto", sans-serif;
+    display: block;
+    margin-bottom: 15px; }
+  .looking__text {
+    margin-bottom: 30px;
+    display: inline; }
   .looking__link {
     color: #f26002;
     border: solid #f26002 1px;
     border-radius: 50px;
-    display: inline; }
+    display: inline;
+    margin-bottom: 45px; }
     .looking__link a {
       padding-left: 25px;
       padding-right: 24px;

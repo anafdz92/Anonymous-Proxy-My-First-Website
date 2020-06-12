@@ -1,17 +1,26 @@
 .looking {
   display: block;
   width: 100%;
+  margin-top: 30px;
+  margin-bottom: 45px;
 
   &__small {
     color: $color-lineText;
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
 
   &__title {
     color: $color-mainText;
     font-style: $font-primary;
+    display: block;
+    margin-bottom: 15px;
   }
 
   &__text {
+    margin-bottom: 30px;
+    display: inline;
   }
 
   &__link {
@@ -19,8 +28,9 @@
     border: solid $color-buttons 1px;
     border-radius: 50px;
     display: inline;
+    margin-bottom: 45px;
 
-    a {
+    & a {
       padding-left: 25px;
       padding-right: 24px;
       padding-top: 10px;
