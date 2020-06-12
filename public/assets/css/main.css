@@ -346,17 +346,19 @@ template {
     align-items: center;
     color: #ffffff;
     margin-bottom: 50px; }
-  .header--title {
-    font-family: "Roboto Slab", serif;
-    text-transform: uppercase;
-    font-size: 42px;
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-    .header--title span {
-      display: block; }
+    .header__box--title {
+      font-family: "Roboto Slab", serif;
+      text-transform: uppercase;
+      font-size: 42px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 0px; }
+      .header__box--title span {
+        display: block; }
   .header__quote {
-    font-family: "Roboto", sans-serif; }
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 45px; }
   .header__arrow {
     min-height: 45px;
     width: 45px;
@@ -483,7 +485,6 @@ template {
 
 .columns {
   width: 100%;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -494,31 +495,26 @@ template {
   text-align: center;
   font-family: "Roboto", sans-serif;
   font-size: 16px; }
-  .columns__lists {
-    margin-top: 60px;
-    margin-bottom: 30px; }
-    .columns__lists li {
-      padding: 5px; }
+  .columns__lists li {
+    padding: 5px; }
   .columns__media {
-    margin-top: 30px;
-    margin-bottom: 30px;
     display: inline-block; }
     .columns__media li {
       padding: 5px; }
       .columns__media li a {
         display: inline-block; }
-    .columns__media__copy {
-      margin-top: 30px;
-      margin-bottom: 45px; }
   @media all and (min-width: 768px) {
     .columns {
       flex-direction: row;
-      justify-content: space-evenly; }
+      justify-content: space-evenly;
+      align-items: flex-start;
+      padding-top: 45px;
+      padding-bottom: 45px; }
       .columns__lists {
         order: 3; }
       .columns__media {
-        order: 2; }
+        order: 1; }
       .columns__copy {
-        order: 1; } }
+        order: 2; } }
 
 /*# sourceMappingURL=main.css.map */
