@@ -1,22 +1,55 @@
 .header {
   height: 100vh;
   width: 100%;
-  border: solid blue 1px;
-  background: url(./assets/images/cover.jpg) no-repeat;
+  background-image: url("../images/cover.jpg");
+  display: flex;
+  flex-direction: column;
+
   &__nav {
-    border: solid 1px red;
+    display: inline-block;
+    background-color: $color-hamburguer;
+    height: 44px;
+    width: 44px;
+    position: fixed;
+
+    &--image {
+      padding: 15px;
+    }
   }
 
   &__box {
     border: solid 1px yellow;
     display: flex;
-    flex: column;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    //justify-content: flex-end;
+    color: $color-primary;
+    height: 50%vh;
 
     &--title {
       font-family: $font-primary;
       text-transform: uppercase;
       font-size: 42px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      & span {
+        display: block;
+      }
+    }
+
+    &--arrow {
+      height: 45px;
+      width: 45px;
+      background-color: $color-primary;
+      border-radius: 50%;
+      display: inline-block;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin-top: 75px;
     }
   }
 }
