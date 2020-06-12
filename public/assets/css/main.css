@@ -332,7 +332,8 @@ template {
     height: 44px;
     width: 44px;
     position: fixed;
-    top: 0px; }
+    top: 0px;
+    z-index: 9999; }
     .header__nav--image {
       padding: 15px; }
   .header__box {
@@ -368,10 +369,14 @@ template {
 .looking {
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
   width: 100%;
   margin-top: 30px;
   margin-bottom: 45px; }
+  .looking__container {
+    max-width: 730px;
+    padding: 0px 15px; }
   .looking__small {
     color: #8ccbea;
     display: inline-block;
@@ -389,15 +394,14 @@ template {
     text-transform: capitalize; }
   .looking__text {
     margin-bottom: 30px;
-    display: inline-block;
-    width: 290px;
-    height: 120px; }
+    display: block;
+    width: 100%; }
   .looking__link {
     color: #f26002;
     border: solid #f26002 1px;
     border-radius: 50px;
-    display: inline;
-    margin-bottom: 45px; }
+    margin-bottom: 45px;
+    display: inline-block; }
     .looking__link a {
       padding-left: 25px;
       padding-right: 24px;
@@ -416,27 +420,20 @@ template {
     font-family: "Roboto Slab", serif;
     text-transform: capitalize;
     font-family: 24px; }
-  .reasons__block--1 h3 {
-    font-family: "Roboto Slab", serif;
-    font-size: 18px;
-    text-transform: capitalize; }
-  .reasons__block--1 p {
-    font-family: "Roboto", sans-serif;
-    font-size: 18px; }
-  .reasons__block--2 h3 {
-    text-transform: capitalize;
-    font-family: "Roboto Slab", serif;
-    font-size: 18px; }
-  .reasons__block--2 p {
-    font-family: "Roboto", sans-serif;
-    font-size: 18px; }
-  .reasons__block--3 h3 {
-    text-transform: capitalize;
-    font-family: "Roboto Slab", serif;
-    font-size: 18px; }
-  .reasons__block--3 p {
-    font-family: "Roboto", sans-serif;
-    font-size: 18px; }
+  .reasons__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; }
+    .reasons__block--child {
+      max-width: 180px; }
+      .reasons__block--child h3 {
+        font-family: "Roboto Slab", serif;
+        font-size: 18px;
+        text-transform: capitalize; }
+      .reasons__block--child p {
+        font-family: "Roboto", sans-serif;
+        font-size: 18px; }
   .reasons__link {
     color: #ffffff;
     background-color: #f26002;
@@ -444,13 +441,14 @@ template {
     display: inline-block;
     margin-bottom: 60px;
     margin-top: 45px;
-    font-family: "Roboto", sans-serif;
     padding: 15px; }
     .reasons__link a {
       padding-left: 25px;
       padding-right: 24px;
       padding-top: 10px;
-      padding-bottom: 10px; }
+      padding-bottom: 10px;
+      font-family: "Roboto", sans-serif;
+      font-weight: bold; }
   .reasons__arrow {
     height: 45px;
     width: 45px;

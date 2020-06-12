@@ -1,10 +1,16 @@
 .looking {
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
   width: 100%;
   margin-top: 30px;
   margin-bottom: 45px;
+
+  &__container {
+    max-width: 730px;
+    padding: 0px 15px;
+  }
 
   &__small {
     color: $color-lineText;
@@ -27,17 +33,16 @@
 
   &__text {
     margin-bottom: 30px;
-    display: inline-block;
-    width: 290px;
-    height: 120px;
+    display: block;
+    width: 100%;
   }
 
   &__link {
     color: $color-buttons;
     border: solid $color-buttons 1px;
     border-radius: 50px;
-    display: inline;
     margin-bottom: 45px;
+    display: inline-block;
 
     & a {
       padding-left: 25px;
