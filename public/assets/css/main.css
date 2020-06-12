@@ -316,6 +316,9 @@ template {
     margin-inline-end: 0px;
     -webkit-padding-start: 0px;
     padding-inline-start: 0px; }
+  * h1 {
+    -webkit-margin-after: 0.67em;
+    margin-block-end: 0.67em; }
 
 .header {
   height: 100vh;
@@ -343,15 +346,15 @@ template {
     align-items: center;
     color: #ffffff;
     margin-bottom: 50px; }
-    .header__box--title {
-      font-family: "Roboto Slab", serif;
-      text-transform: uppercase;
-      font-size: 42px;
-      display: flex;
-      flex-direction: column;
-      align-items: center; }
-      .header__box--title span {
-        display: block; }
+  .header--title {
+    font-family: "Roboto Slab", serif;
+    text-transform: uppercase;
+    font-size: 42px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .header--title span {
+      display: block; }
   .header__quote {
     font-family: "Roboto", sans-serif; }
   .header__arrow {
@@ -439,6 +442,14 @@ template {
       .reasons__block--child p {
         font-family: "Roboto", sans-serif;
         font-size: 18px; }
+      @media all and (min-width: 768px) {
+        .reasons__block--child {
+          max-width: 690px; } }
+    @media all and (min-width: 768px) {
+      .reasons__block {
+        max-width: 33.33%px;
+        flex-direction: row;
+        justify-content: space-between; } }
   .reasons__link {
     color: #ffffff;
     background-color: #f26002;

@@ -29,18 +29,18 @@
     align-items: center;
     color: $color-primary;
     margin-bottom: 50px;
+  }
 
-    &--title {
-      font-family: $font-secondary;
-      text-transform: uppercase;
-      font-size: 42px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+  &--title {
+    font-family: $font-secondary;
+    text-transform: uppercase;
+    font-size: 42px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-      & span {
-        display: block;
-      }
+    & span {
+      display: block;
     }
   }
 
