@@ -353,8 +353,6 @@ template {
       .header__box--title span {
         display: block; }
   .header__quote {
-    margin-top: 10px;
-    margin-bottom: 45px;
     font-family: "Roboto", sans-serif; }
   .header__arrow {
     min-height: 45px;
@@ -364,8 +362,7 @@ template {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    margin-top: 45px; }
+    flex-direction: column; }
 
 .looking {
   display: flex;
