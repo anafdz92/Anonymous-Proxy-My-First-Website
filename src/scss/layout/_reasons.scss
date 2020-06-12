@@ -1,14 +1,63 @@
 .reasons {
   background-color: $color-secondary;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
+  position: relative;
+
+  &__title {
+    font-family: $font-secondary;
+    text-transform: capitalize;
+    font-family: 24px;
+  }
+
+  &__block--1 {
+    h3 {
+      font-family: $font-secondary;
+      font-size: 18px;
+      text-transform: capitalize;
+    }
+    p {
+      font-family: $font-primary;
+      font-size: 18px;
+    }
+  }
+
+  &__block--2 {
+    h3 {
+      text-transform: capitalize;
+      font-family: $font-secondary;
+      font-size: 18px;
+    }
+    p {
+      font-family: $font-primary;
+      font-size: 18px;
+    }
+  }
+
+  &__block--3 {
+    h3 {
+      text-transform: capitalize;
+      font-family: $font-secondary;
+      font-size: 18px;
+    }
+    p {
+      font-family: $font-primary;
+      font-size: 18px;
+    }
+  }
 
   &__link {
     color: $color-primary;
     background-color: $color-buttons;
     border-radius: 50px;
     display: inline-block;
-    margin-bottom: 45px;
+    margin-bottom: 60px;
+    margin-top: 45px;
+    font-family: $font-primary;
+    padding: 15px;
 
     & a {
       padding-left: 25px;
@@ -23,13 +72,15 @@
     width: 45px;
     background-color: $color-primary;
     border-radius: 50%;
-    display: inline-block;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     margin-top: 33px;
     position: absolute;
-    transform: translate(345%, -120%);
+    left: 50%;
+    bottom: 0;
+    transform: translate(-22px, 50%);
+    vertical-align: middle;
   }
 }
