@@ -377,36 +377,43 @@ template {
   .looking__container {
     max-width: 730px;
     padding: 0px 15px; }
-  .looking__small {
-    color: #8ccbea;
-    display: inline-block;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    text-transform: capitalize; }
-  .looking__title {
-    color: #000000;
-    font-style: "Roboto", sans-serif;
-    display: block;
-    margin-bottom: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    text-transform: capitalize; }
-  .looking__text {
-    margin-bottom: 30px;
-    display: block;
-    width: 100%; }
-  .looking__link {
-    color: #f26002;
-    border: solid #f26002 1px;
-    border-radius: 50px;
-    margin-bottom: 45px;
-    display: inline-block; }
-    .looking__link a {
-      padding-left: 25px;
-      padding-right: 24px;
-      padding-top: 10px;
-      padding-bottom: 10px; }
+    .looking__container--small {
+      color: #8ccbea;
+      display: inline-block;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      text-transform: capitalize;
+      font-family: "Roboto", sans-serif;
+      font-size: 14px; }
+    .looking__container--title {
+      color: #000000;
+      display: block;
+      margin-bottom: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      text-transform: capitalize; }
+      .looking__container--title span {
+        font-family: "Roboto Slab", serif;
+        font-size: 24px; }
+    .looking__container--text {
+      margin-bottom: 30px;
+      display: block;
+      width: 100%;
+      font-family: "Roboto", sans-serif;
+      font-size: 18px; }
+    .looking__container--link {
+      color: #f26002;
+      border: solid #f26002 2px;
+      border-radius: 50px;
+      margin-bottom: 45px;
+      display: inline-block;
+      padding: 5px; }
+      .looking__container--link a {
+        padding-left: 12px;
+        padding-right: 12px;
+        font-family: "Roboto", sans-serif;
+        font-weight: bold; }
 
 .reasons {
   background-color: #eff9ff;
