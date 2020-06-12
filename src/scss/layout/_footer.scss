@@ -10,6 +10,8 @@
   text-align: center;
   font-family: $font-primary;
   font-size: 16px;
+  padding-top: 60px;
+  padding-bottom: 45px;
 
   &__lists {
     //margin-top: 60px;
@@ -50,13 +52,11 @@
     }
 
     &__media {
-      order: 1;
+      order: 3;
     }
 
     &__copy {
-      order: 2;
+      order: 1;
     }
-
-    //vertical-align: bottom;
   }
 }
