@@ -8,4 +8,35 @@
   background-color: $color-tertiary;
   color: $color-primary;
   text-transform: uppercase;
+  text-align: center;
+  font-family: $font-primary;
+  font-size: 16px;
+
+  &__lists {
+    margin-top: 60px;
+    margin-bottom: 30px;
+
+    & li {
+      padding: 5px;
+    }
+  }
+
+  &__media {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: inline-block;
+
+    & li {
+      padding: 5px;
+
+      a {
+        display: inline-block;
+      }
+    }
+
+    &__copy {
+      margin-top: 30px;
+      margin-bottom: 45px;
+    }
+  }
 }

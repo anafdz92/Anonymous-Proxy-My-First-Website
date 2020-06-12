@@ -309,6 +309,13 @@ template {
   list-style-type: none;
   color: inherit;
   text-decoration: none; }
+  * ul {
+    -webkit-margin-start: 0px;
+    margin-inline-start: 0px;
+    -webkit-margin-end: 0px;
+    margin-inline-end: 0px;
+    -webkit-padding-start: 0px;
+    padding-inline-start: 0px; }
 
 .header {
   height: 100vh;
@@ -435,6 +442,25 @@ template {
   justify-content: space-evenly;
   background-color: #304268;
   color: #ffffff;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px; }
+  .columns__lists {
+    margin-top: 60px;
+    margin-bottom: 30px; }
+    .columns__lists li {
+      padding: 5px; }
+  .columns__media {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: inline-block; }
+    .columns__media li {
+      padding: 5px; }
+      .columns__media li a {
+        display: inline-block; }
+    .columns__media__copy {
+      margin-top: 30px;
+      margin-bottom: 45px; }
 
 /*# sourceMappingURL=main.css.map */
