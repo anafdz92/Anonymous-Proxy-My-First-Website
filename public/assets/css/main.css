@@ -510,5 +510,9 @@ template {
     .columns__media__copy {
       margin-top: 30px;
       margin-bottom: 45px; }
+  @media all and (min-width: 768px) {
+    .columns {
+      flex-direction: row;
+      justify-content: space-evenly; } }
 
 /*# sourceMappingURL=main.css.map */
