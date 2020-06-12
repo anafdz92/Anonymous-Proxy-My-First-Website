@@ -2,6 +2,8 @@
   height: 100vh;
   width: 100%;
   background-image: url("../images/cover.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -24,7 +26,6 @@
     flex-direction: column;
     align-items: center;
     color: $color-primary;
-    height: 50%;
     margin-bottom: 50px;
 
     &--title {
@@ -50,7 +51,6 @@
       width: 45px;
       background-color: $color-primary;
       border-radius: 50%;
-      display: inline-block;
       display: flex;
       align-items: center;
       justify-content: center;

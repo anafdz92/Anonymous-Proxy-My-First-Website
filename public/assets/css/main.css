@@ -310,16 +310,12 @@ template {
   color: inherit;
   text-decoration: none; }
 
-.wrapper {
-  max-width: 1200px;
-  margin-left: 15px;
-  margin-right: 15px;
-  width: 100%; }
-
 .header {
   height: 100vh;
   width: 100%;
   background-image: url("../images/cover.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: flex-end; }
@@ -337,7 +333,6 @@ template {
     flex-direction: column;
     align-items: center;
     color: #ffffff;
-    height: 50%;
     margin-bottom: 50px; }
     .header__box--title {
       font-family: "Roboto", sans-serif;
@@ -356,7 +351,6 @@ template {
       width: 45px;
       background-color: #ffffff;
       border-radius: 50%;
-      display: inline-block;
       display: flex;
       align-items: center;
       justify-content: center;
