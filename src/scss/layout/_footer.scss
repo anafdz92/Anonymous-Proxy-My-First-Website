@@ -14,17 +14,12 @@
   padding-bottom: 45px;
 
   &__lists {
-    //margin-top: 60px;
-    //margin-bottom: 30px;
-
     & li {
       padding: 5px;
     }
   }
 
   &__media {
-    //margin-top: 30px;
-    //margin-bottom: 30px;
     display: inline-block;
 
     & li {
@@ -33,11 +28,6 @@
       a {
         display: inline-block;
       }
-    }
-
-    &__copy {
-      //margin-top: 30px;
-      //margin-bottom: 45px;
     }
   }
   @media all and (min-width: 768px) {
