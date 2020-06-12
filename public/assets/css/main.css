@@ -374,15 +374,22 @@ template {
     color: #8ccbea;
     display: inline-block;
     padding-top: 5px;
-    padding-bottom: 5px; }
+    padding-bottom: 5px;
+    text-transform: capitalize; }
   .looking__title {
     color: #000000;
     font-style: "Roboto", sans-serif;
     display: block;
-    margin-bottom: 15px; }
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-transform: capitalize; }
   .looking__text {
     margin-bottom: 30px;
-    display: block; }
+    display: inline-block;
+    width: 290px;
+    height: 120px; }
   .looking__link {
     color: #f26002;
     border: solid #f26002 1px;
