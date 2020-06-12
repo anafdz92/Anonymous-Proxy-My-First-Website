@@ -513,6 +513,12 @@ template {
   @media all and (min-width: 768px) {
     .columns {
       flex-direction: row;
-      justify-content: space-evenly; } }
+      justify-content: space-evenly; }
+      .columns__lists {
+        order: 3; }
+      .columns__media {
+        order: 2; }
+      .columns__copy {
+        order: 1; } }
 
 /*# sourceMappingURL=main.css.map */
