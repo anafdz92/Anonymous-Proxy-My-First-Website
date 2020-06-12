@@ -3,11 +3,33 @@
   display: block;
   text-align: center;
 
-  //   &__title {
-  //
-  //   }
+  &__link {
+    color: $color-primary;
+    background-color: $color-buttons;
+    border-radius: 50px;
+    display: inline-block;
+    margin-bottom: 45px;
 
-  //   &__block--1 {
-  //
-  //   }
+    & a {
+      padding-left: 25px;
+      padding-right: 24px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+
+  &__arrow {
+    height: 45px;
+    width: 45px;
+    background-color: $color-primary;
+    border-radius: 50%;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 33px;
+    position: absolute;
+    transform: translate(345%, -120%);
+  }
 }
