@@ -12,36 +12,53 @@
   font-family: $font-primary;
   font-size: 16px;
 
-  &__lists {
-    margin-top: 60px;
-    margin-bottom: 30px;
+  &__container {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
 
-    & li {
-      padding: 5px;
-    }
-  }
+    &--children {
+      max-height: 360px;
 
-  &__media {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    display: inline-block;
-
-    & li {
-      padding: 5px;
-
-      a {
-        display: inline-block;
+      @media all and (min-width: 768px) {
+        max-width: 690px;
       }
     }
 
-    &__copy {
+    &--lists {
+      margin-top: 60px;
+      margin-bottom: 30px;
+
+      & li {
+        padding: 5px;
+      }
+    }
+
+    &--media {
       margin-top: 30px;
-      margin-bottom: 45px;
+      margin-bottom: 30px;
+      display: inline-block;
+
+      & li {
+        padding: 5px;
+
+        a {
+          display: inline-block;
+        }
+      }
+
+      &--copy {
+        margin-top: 30px;
+        margin-bottom: 45px;
+      }
     }
   }
+
   @media all and (min-width: 768px) {
     flex-direction: row;
     justify-content: space-evenly;
+    max-width: 33.33%px;
 
     &__lists {
       order: 3;
