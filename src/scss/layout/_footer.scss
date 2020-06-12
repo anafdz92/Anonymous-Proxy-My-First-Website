@@ -53,25 +53,25 @@
         margin-bottom: 45px;
       }
     }
-  }
 
-  @media all and (min-width: 768px) {
-    flex-direction: row;
-    justify-content: space-evenly;
-    max-width: 33.33%px;
+    @media all and (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-evenly;
+      max-width: 33.33%;
 
-    &__lists {
-      order: 3;
+      &__lists {
+        order: 3;
+      }
+
+      &__media {
+        order: 2;
+      }
+
+      &__copy {
+        order: 1;
+      }
+
+      //vertical-align: bottom;
     }
-
-    &__media {
-      order: 2;
-    }
-
-    &__copy {
-      order: 1;
-    }
-
-    //vertical-align: bottom;
   }
 }
