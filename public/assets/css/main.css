@@ -356,25 +356,31 @@ template {
       margin-bottom: 0px; }
       .header__box--title span {
         display: block; }
+      @media all and (min-width: 768px) {
+        .header__box--title {
+          font-size: 80px; } }
   .header__quote {
     font-family: "Roboto", sans-serif;
     margin-bottom: 45px; }
-  .header__arrow {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    min-height: 45px;
-    width: 45px;
-    border-radius: 50%;
-    background-color: #ffffff; }
-    .header__arrow :hover {
-      min-height: 45.5px;
-      transition: min-height ease 0.8s;
-      width: 45.5px;
-      transition: min-height ease 0.8s;
-      border-radius: 55%;
-      transition: border-radius ease 0.8s; }
+    @media all and (min-width: 768px) {
+      .header__quote {
+        font-size: 24px; } }
+    .header__quote__arrow {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      min-height: 45px;
+      width: 45px;
+      border-radius: 50%;
+      background-color: #ffffff; }
+      .header__quote__arrow :hover {
+        min-height: 45.5px;
+        transition: min-height ease 0.8s;
+        width: 45.5px;
+        transition: min-height ease 0.8s;
+        border-radius: 55%;
+        transition: border-radius ease 0.8s; }
 
 .looking {
   display: flex;
@@ -406,12 +412,18 @@ template {
       .looking__container--title span {
         font-family: "Roboto Slab", serif;
         font-size: 24px; }
+      @media all and (min-width: 768px) {
+        .looking__container--title {
+          font-size: 45px; } }
     .looking__container--text {
       margin-bottom: 30px;
       display: block;
       width: 100%;
       font-family: "Roboto", sans-serif;
       font-size: 18px; }
+      @media all and (min-width: 768px) {
+        .looking__container--text {
+          font-size: 20px; } }
     .looking__container--link {
       color: #f26002;
       border: solid #f26002 2px;
@@ -446,6 +458,9 @@ template {
     font-family: "Roboto Slab", serif;
     text-transform: capitalize;
     font-family: 24px; }
+    @media all and (min-width: 768px) {
+      .reasons__title {
+        font-size: 26px; } }
   .reasons__block {
     display: flex;
     flex-direction: column;
@@ -457,9 +472,15 @@ template {
         font-family: "Roboto Slab", serif;
         font-size: 18px;
         text-transform: capitalize; }
+        @media all and (min-width: 768px) {
+          .reasons__block--child h3 {
+            font-size: 24px; } }
       .reasons__block--child p {
         font-family: "Roboto", sans-serif;
         font-size: 18px; }
+        @media all and (min-width: 768px) {
+          .reasons__block--child p {
+            font-size: 20px; } }
       @media all and (min-width: 768px) {
         .reasons__block--child {
           max-width: 690px; } }
@@ -533,8 +554,10 @@ template {
       padding: 5px; }
       .columns__media li a {
         display: inline-block; }
-  .columns__copy--heart {
-    color: #f26002; }
+  .columns__copy {
+    font-size: 14px; }
+    .columns__copy--heart {
+      color: #f26002; }
   @media all and (min-width: 768px) {
     .columns {
       flex-direction: row;
