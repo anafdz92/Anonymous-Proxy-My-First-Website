@@ -345,17 +345,22 @@ template {
     flex-direction: column;
     align-items: center;
     color: #ffffff;
-    margin-bottom: 50px; }
+    margin-bottom: 53px; }
     .header__box--title {
       font-family: "Roboto Slab", serif;
       text-transform: uppercase;
+      font-weight: bold;
       font-size: 42px;
       display: flex;
       flex-direction: column;
       align-items: center;
       margin-bottom: 0px; }
       .header__box--title span {
-        display: block; }
+        display: block;
+        padding-top: 10px; }
+        @media all and (min-width: 768px) {
+          .header__box--title span {
+            padding-top: 0px; } }
       @media all and (min-width: 768px) {
         .header__box--title {
           font-size: 80px; } }
@@ -364,7 +369,8 @@ template {
           font-size: 100px; } }
   .header__quote {
     font-family: "Roboto", sans-serif;
-    margin-bottom: 45px; }
+    padding-bottom: 45px;
+    padding-top: 10px; }
     @media all and (min-width: 768px) {
       .header__quote {
         font-size: 24px; } }
