@@ -16,14 +16,13 @@
       text-transform: capitalize;
       font-family: $font-primary;
       font-size: 14px;
-      @media all and (min-width: 1200px) {
+      @include for-desktop {
         font-size: 16px;
       }
     }
 
     &--title {
       color: $color-mainText;
-      display: block;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
@@ -32,10 +31,10 @@
       & span {
         font-family: $font-secondary;
         font-size: 24px;
-        @media all and (min-width: 768px) {
+        @include for-tablet {
           font-size: 26px;
         }
-        @media all and (min-width: 1200px) {
+        @include for-desktop {
           font-size: 32px;
         }
       }
@@ -47,7 +46,7 @@
       width: 100%;
       font-family: $font-primary;
       font-size: 18px;
-      @media all and (min-width: 768px) {
+      @include for-tablet {
         font-size: 20px;
       }
     }
@@ -81,10 +80,10 @@
         color: $color-primary;
         transition: color ease 0.8s;
       }
-      @media all and (min-width: 768px) {
+      @include for-tablet {
         width: 96px;
       }
-      @media all and (min-width: 1200px) {
+      @include for-desktop {
         width: 160px;
       }
     }

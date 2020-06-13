@@ -43,14 +43,14 @@
       & span {
         display: block;
         padding-top: 10px;
-        @media all and (min-width: 768px) {
+        @include for-tablet {
           padding-top: 0px;
         }
       }
-      @media all and (min-width: 768px) {
+      @include for-tablet {
         font-size: 80px;
       }
-      @media all and (min-width: 1200px) {
+      @include for-desktop {
         font-size: 100px;
       }
     }
@@ -60,7 +60,7 @@
     font-family: $font-primary;
     padding-bottom: 45px;
     padding-top: 10px;
-    @media all and (min-width: 768px) {
+    @include for-tablet {
       font-size: 24px;
     }
   }
@@ -70,9 +70,9 @@
     background-color: $color-primary;
     border-radius: 50%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
 
     :hover {
       min-height: 45.5px;

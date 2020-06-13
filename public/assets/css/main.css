@@ -358,20 +358,20 @@ template {
       .header__box--title span {
         display: block;
         padding-top: 10px; }
-        @media all and (min-width: 768px) {
+        @media (min-width: 768px) {
           .header__box--title span {
             padding-top: 0px; } }
-      @media all and (min-width: 768px) {
+      @media (min-width: 768px) {
         .header__box--title {
           font-size: 80px; } }
-      @media all and (min-width: 1200px) {
+      @media (min-width: 1280px) {
         .header__box--title {
           font-size: 100px; } }
   .header__quote {
     font-family: "Roboto", sans-serif;
     padding-bottom: 45px;
     padding-top: 10px; }
-    @media all and (min-width: 768px) {
+    @media (min-width: 768px) {
       .header__quote {
         font-size: 24px; } }
   .header__arrow {
@@ -380,9 +380,9 @@ template {
     background-color: #ffffff;
     border-radius: 50%;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    flex-direction: column; }
+    justify-content: center; }
     .header__arrow :hover {
       min-height: 45.5px;
       transition: min-height ease 0.8s;
@@ -407,12 +407,11 @@ template {
       text-transform: capitalize;
       font-family: "Roboto", sans-serif;
       font-size: 14px; }
-      @media all and (min-width: 1200px) {
+      @media (min-width: 1280px) {
         .looking__container--small {
           font-size: 16px; } }
     .looking__container--title {
       color: #000000;
-      display: block;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
@@ -420,10 +419,10 @@ template {
       .looking__container--title span {
         font-family: "Roboto Slab", serif;
         font-size: 24px; }
-        @media all and (min-width: 768px) {
+        @media (min-width: 768px) {
           .looking__container--title span {
             font-size: 26px; } }
-        @media all and (min-width: 1200px) {
+        @media (min-width: 1280px) {
           .looking__container--title span {
             font-size: 32px; } }
     .looking__container--text {
@@ -432,7 +431,7 @@ template {
       width: 100%;
       font-family: "Roboto", sans-serif;
       font-size: 18px; }
-      @media all and (min-width: 768px) {
+      @media (min-width: 768px) {
         .looking__container--text {
           font-size: 20px; } }
     .looking__container--link {
@@ -461,10 +460,10 @@ template {
         transition: border-radius ease 0.8s;
         color: #ffffff;
         transition: color ease 0.8s; }
-      @media all and (min-width: 768px) {
+      @media (min-width: 768px) {
         .looking__container--link {
           width: 96px; } }
-      @media all and (min-width: 1200px) {
+      @media (min-width: 1280px) {
         .looking__container--link {
           width: 160px; } }
 
@@ -480,10 +479,10 @@ template {
     font-family: "Roboto Slab", serif;
     text-transform: capitalize;
     font-size: 24px; }
-    @media all and (min-width: 768px) {
+    @media (min-width: 768px) {
       .reasons__title {
         font-size: 26px; } }
-    @media all and (min-width: 1200px) {
+    @media (min-width: 1280px) {
       .reasons__title {
         font-size: 32px; } }
   .reasons__block {
@@ -497,22 +496,22 @@ template {
         font-family: "Roboto Slab", serif;
         font-size: 18px;
         text-transform: capitalize; }
-        @media all and (min-width: 768px) {
+        @media (min-width: 768px) {
           .reasons__block--child h3 {
             font-size: 24px; } }
       .reasons__block--child p {
         font-family: "Roboto", sans-serif;
         font-size: 18px; }
-        @media all and (min-width: 768px) {
+        @media (min-width: 768px) {
           .reasons__block--child p {
             font-size: 20px; } }
-      @media all and (min-width: 768px) {
+      @media (min-width: 768px) {
         .reasons__block--child {
           max-width: 210px; } }
-      @media all and (min-width: 1200px) {
+      @media (min-width: 1280px) {
         .reasons__block--child {
           max-width: 353.8px; } }
-    @media all and (min-width: 768px) {
+    @media (min-width: 768px) {
       .reasons__block {
         flex-direction: row;
         justify-content: space-evenly;
@@ -557,19 +556,19 @@ template {
       transition: min-height ease 0.8s; }
 
 .columns {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
   background-color: #304268;
   color: #ffffff;
   text-align: center;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   padding-top: 60px;
-  padding-bottom: 45px; }
-  @media all and (min-width: 768px) {
+  padding-bottom: 45px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly; }
+  @media (min-width: 768px) {
     .columns {
       flex-direction: row;
       justify-content: space-evenly;
