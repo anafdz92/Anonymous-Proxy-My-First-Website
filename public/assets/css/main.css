@@ -360,14 +360,21 @@ template {
     font-family: "Roboto", sans-serif;
     margin-bottom: 45px; }
   .header__arrow {
-    min-height: 45px;
-    width: 45px;
-    background-color: #ffffff;
-    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column; }
+    flex-direction: column;
+    min-height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    background-color: #ffffff; }
+    .header__arrow :hover {
+      min-height: 45.5px;
+      transition: min-height ease 0.8s;
+      width: 45.5px;
+      transition: min-height ease 0.8s;
+      border-radius: 55%;
+      transition: border-radius ease 0.8s; }
 
 .looking {
   display: flex;
@@ -413,10 +420,19 @@ template {
       display: inline-block;
       padding: 5px; }
       .looking__container--link a {
-        padding-left: 12px;
-        padding-right: 12px;
+        padding-left: 15px;
+        padding-right: 15px;
         font-family: "Roboto", sans-serif;
         font-weight: bold; }
+      .looking__container--link :hover {
+        background-color: #0271bc;
+        transition: background-color ease 0.8s;
+        border: solid #0271bc 2px;
+        transition: border ease 0.8s;
+        border-radius: 50px;
+        transition: border-radius ease 0.8s;
+        color: #ffffff;
+        transition: color ease 0.8s; }
 
 .reasons {
   background-color: #eff9ff;
@@ -467,6 +483,11 @@ template {
       padding-bottom: 10px;
       font-family: "Roboto", sans-serif;
       font-weight: bold; }
+    .reasons__link :hover {
+      background-color: #0271bc;
+      transition: background-color ease 0.8s;
+      border-radius: 60px;
+      transition: border-radius ease 0.8s; }
   .reasons__arrow {
     height: 45px;
     width: 45px;

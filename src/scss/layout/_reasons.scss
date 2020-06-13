@@ -59,6 +59,12 @@
       font-family: $font-primary;
       font-weight: bold;
     }
+    :hover {
+      background-color: $color-hamburguer;
+      transition: background-color ease 0.8s;
+      border-radius: 60px;
+      transition: border-radius ease 0.8s;
+    }
   }
 
   &__arrow {

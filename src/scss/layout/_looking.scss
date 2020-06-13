@@ -53,10 +53,20 @@
       padding: 5px;
 
       & a {
-        padding-left: 12px;
-        padding-right: 12px;
+        padding-left: 15px;
+        padding-right: 15px;
         font-family: $font-primary;
         font-weight: bold;
+      }
+      :hover {
+        background-color: $color-hamburguer;
+        transition: background-color ease 0.8s;
+        border: solid $color-hamburguer 2px;
+        transition: border ease 0.8s;
+        border-radius: 50px;
+        transition: border-radius ease 0.8s;
+        color: $color-primary;
+        transition: color ease 0.8s;
       }
     }
   }

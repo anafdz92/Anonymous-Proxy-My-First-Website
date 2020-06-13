@@ -51,13 +51,22 @@
   }
 
   &__arrow {
-    min-height: 45px;
-    width: 45px;
-    background-color: $color-primary;
-    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    min-height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    background-color: $color-primary;
+
+    :hover {
+      min-height: 45.5px;
+      transition: min-height ease 0.8s;
+      width: 45.5px;
+      transition: min-height ease 0.8s;
+      border-radius: 55%;
+      transition: border-radius ease 0.8s;
+    }
   }
 }
