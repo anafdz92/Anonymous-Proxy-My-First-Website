@@ -405,8 +405,6 @@ template {
     .looking__container--small {
       color: #8ccbea;
       display: inline-block;
-      padding-top: 5px;
-      padding-bottom: 5px;
       text-transform: capitalize;
       font-family: "Roboto", sans-serif;
       font-size: 14px; }
