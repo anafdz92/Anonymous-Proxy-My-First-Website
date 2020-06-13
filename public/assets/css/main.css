@@ -503,6 +503,11 @@ template {
     bottom: 0;
     transform: translate(-22px, 50%);
     vertical-align: middle; }
+    .reasons__arrow :hover {
+      min-height: 45.3px;
+      transition: min-height ease 0.8s;
+      width: 45.3px;
+      transition: min-height ease 0.8s; }
 
 .columns {
   width: 100%;
