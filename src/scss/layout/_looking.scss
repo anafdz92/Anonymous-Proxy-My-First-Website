@@ -63,12 +63,17 @@
       margin-bottom: 45px;
       display: inline-block;
       padding: 5px;
+      width: 76px;
 
       & a {
         padding-left: 15px;
         padding-right: 15px;
         font-family: $font-primary;
         font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
       }
       :hover {
         background-color: $color-hamburguer;
@@ -79,6 +84,12 @@
         transition: border-radius ease 0.8s;
         color: $color-primary;
         transition: color ease 0.8s;
+      }
+      @media all and (min-width: 768px) {
+        width: 96px;
+      }
+      @media all and (min-width: 1200px) {
+        width: 160px;
       }
     }
   }
