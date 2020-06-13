@@ -19,6 +19,9 @@
       text-transform: capitalize;
       font-family: $font-primary;
       font-size: 14px;
+      @media all and (min-width: 1200px) {
+        font-size: 16px;
+      }
     }
 
     &--title {
@@ -33,9 +36,12 @@
       & span {
         font-family: $font-secondary;
         font-size: 24px;
-      }
-      @media all and (min-width: 768px) {
-        font-size: 45px;
+        @media all and (min-width: 768px) {
+          font-size: 26px;
+        }
+        @media all and (min-width: 1200px) {
+          font-size: 32px;
+        }
       }
     }
 
