@@ -510,12 +510,15 @@ template {
             font-size: 20px; } }
       @media all and (min-width: 768px) {
         .reasons__block--child {
-          max-width: 690px; } }
+          max-width: 210px; } }
+      @media all and (min-width: 1200px) {
+        .reasons__block--child {
+          max-width: 353.8px; } }
     @media all and (min-width: 768px) {
       .reasons__block {
-        max-width: 33.33%px;
         flex-direction: row;
-        justify-content: space-between; } }
+        justify-content: space-evenly;
+        align-items: flex-start; } }
   .reasons__link {
     color: #ffffff;
     background-color: #f26002;
