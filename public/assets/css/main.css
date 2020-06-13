@@ -517,15 +517,17 @@ template {
   justify-content: space-evenly;
   background-color: #304268;
   color: #ffffff;
-  text-transform: uppercase;
   text-align: center;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   padding-top: 60px;
   padding-bottom: 45px; }
-  .columns__lists li {
-    padding: 5px; }
+  .columns__lists {
+    text-transform: uppercase; }
+    .columns__lists li {
+      padding: 5px; }
   .columns__media {
+    text-transform: uppercase;
     display: inline-block; }
     .columns__media li {
       padding: 5px; }

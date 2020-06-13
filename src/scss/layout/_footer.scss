@@ -6,7 +6,6 @@
   justify-content: space-evenly;
   background-color: $color-tertiary;
   color: $color-primary;
-  text-transform: uppercase;
   text-align: center;
   font-family: $font-primary;
   font-size: 16px;
@@ -14,12 +13,14 @@
   padding-bottom: 45px;
 
   &__lists {
+    text-transform: uppercase;
     & li {
       padding: 5px;
     }
   }
 
   &__media {
+    text-transform: uppercase;
     display: inline-block;
 
     & li {
