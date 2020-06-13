@@ -544,10 +544,8 @@ template {
     background-color: #ffffff;
     border-radius: 50%;
     display: flex;
-    align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-top: 33px;
     position: absolute;
     left: 50%;
     bottom: 0;
@@ -577,6 +575,7 @@ template {
       flex-direction: row;
       justify-content: space-evenly;
       align-items: flex-start;
+      text-align: left;
       padding-top: 45px;
       padding-bottom: 45px; }
       .columns__lists {
