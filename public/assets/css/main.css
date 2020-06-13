@@ -533,6 +533,8 @@ template {
       padding: 5px; }
       .columns__media li a {
         display: inline-block; }
+  .columns__copy--heart {
+    color: #f26002; }
   @media all and (min-width: 768px) {
     .columns {
       flex-direction: row;
