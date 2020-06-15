@@ -367,29 +367,29 @@ template {
       @media (min-width: 1280px) {
         .header__box--title {
           font-size: 100px; } }
-  .header__quote {
-    font-family: "Roboto", sans-serif;
-    padding-bottom: 45px;
-    padding-top: 10px; }
-    @media (min-width: 768px) {
-      .header__quote {
-        font-size: 24px; } }
-  .header__arrow {
-    min-height: 45px;
-    width: 45px;
-    background-color: #ffffff;
-    border-radius: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; }
-    .header__arrow :hover {
-      min-height: 45.5px;
-      transition: min-height ease 0.8s;
-      width: 45.5px;
-      transition: min-height ease 0.8s;
-      border-radius: 55%;
-      transition: border-radius ease 0.8s; }
+    .header__box--quote {
+      font-family: "Roboto", sans-serif;
+      padding-bottom: 45px;
+      padding-top: 10px; }
+      @media (min-width: 768px) {
+        .header__box--quote {
+          font-size: 24px; } }
+    .header__box--arrow {
+      min-height: 45px;
+      width: 45px;
+      background-color: #ffffff;
+      border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      .header__box--arrow :hover {
+        min-height: 45.5px;
+        transition: min-height ease 0.8s;
+        width: 45.5px;
+        transition: min-height ease 0.8s;
+        border-radius: 55%;
+        transition: border-radius ease 0.8s; }
 
 .looking {
   display: flex;

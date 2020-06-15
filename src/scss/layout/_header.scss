@@ -54,33 +54,32 @@
         font-size: 100px;
       }
     }
-  }
-
-  &__quote {
-    font-family: $font-primary;
-    padding-bottom: 45px;
-    padding-top: 10px;
-    @include for-tablet {
-      font-size: 24px;
+    &--quote {
+      font-family: $font-primary;
+      padding-bottom: 45px;
+      padding-top: 10px;
+      @include for-tablet {
+        font-size: 24px;
+      }
     }
-  }
-  &__arrow {
-    min-height: 45px;
-    width: 45px;
-    background-color: $color-primary;
-    border-radius: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    &--arrow {
+      min-height: 45px;
+      width: 45px;
+      background-color: $color-primary;
+      border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
 
-    :hover {
-      min-height: 45.5px;
-      transition: min-height ease 0.8s;
-      width: 45.5px;
-      transition: min-height ease 0.8s;
-      border-radius: 55%;
-      transition: border-radius ease 0.8s;
+      :hover {
+        min-height: 45.5px;
+        transition: min-height ease 0.8s;
+        width: 45.5px;
+        transition: min-height ease 0.8s;
+        border-radius: 55%;
+        transition: border-radius ease 0.8s;
+      }
     }
   }
 }
