@@ -82,4 +82,26 @@
       }
     }
   }
+
+  &__newSection {
+    display: flex;
+    background-color: $color-buttons;
+    color: $color-primary;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    @include for-tablet {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      background-color: $color-tertiary;
+    }
+
+    &--child {
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+  }
 }
